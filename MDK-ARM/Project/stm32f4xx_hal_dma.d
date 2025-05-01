@@ -8,10 +8,10 @@ project/stm32f4xx_hal_dma.o: \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h \
   ..\Drivers\CMSIS\Include\core_cm4.h \
   D:\Keil_v5\ARM\ARMCLANG\include\stdint.h \
-  C:\Users\XU\Desktop\Template\Drivers\CMSIS\Include\cmsis_version.h \
-  C:\Users\XU\Desktop\Template\Drivers\CMSIS\Include\cmsis_compiler.h \
-  C:\Users\XU\Desktop\Template\Drivers\CMSIS\Include\cmsis_armclang.h \
-  C:\Users\XU\Desktop\Template\Drivers\CMSIS\Include\mpu_armv7.h \
+  C:\Users\XU\Desktop\ADS1220\Drivers\CMSIS\Include\cmsis_version.h \
+  C:\Users\XU\Desktop\ADS1220\Drivers\CMSIS\Include\cmsis_compiler.h \
+  C:\Users\XU\Desktop\ADS1220\Drivers\CMSIS\Include\cmsis_armclang.h \
+  C:\Users\XU\Desktop\ADS1220\Drivers\CMSIS\Include\mpu_armv7.h \
   ..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
   D:\Keil_v5\ARM\ARMCLANG\include\stddef.h \
