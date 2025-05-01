@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "tjc.h": "c",
+        "usart.h": "c",
+        "string.h": "c",
+        "emm_v5.h": "c",
+        "servo.h": "c",
+        "chess_task.h": "c",
+        "control_logic.h": "c",
+        "main.h": "c",
+        "stdint.h": "c",
+        "gpio.h": "c",
+        "w25q128.h": "c",
+        "stm32f407xx.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "stm32f4xx_hal_conf.h": "c",
+        "ads1220.h": "c"
+    }
+}
