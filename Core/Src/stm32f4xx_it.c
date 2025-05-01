@@ -22,6 +22,7 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "ads1220.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -240,7 +241,12 @@ void DMA1_Stream5_IRQHandler(void)
 void EXTI9_5_IRQHandler(void)
 {
   /* USER CODE BEGIN EXTI9_5_IRQn 0 */
-
+  if(__HAL_GPIO_EXTI_GET_IT(ADS_DRDY_Pin) != RESET) {
+    if(HAL_GPIO_ReadPin(ADS_DRDY_GPIO_Port, ADS_DRDY_Pin) == GPIO_PIN_RESET) {
+    // 在此读取数据
+      adc_data = ADS1220_ReadData();
+      }
+    }
   /* USER CODE END EXTI9_5_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(ADS_DRDY_Pin);
   /* USER CODE BEGIN EXTI9_5_IRQn 1 */

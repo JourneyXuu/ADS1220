@@ -8,18 +8,16 @@ void ADS1220_Init(void) {
     SPI_SCK_LOW();  // 空闲时钟低电平
 
     ADS1220_WriteCommand(ADS1220_RESET);        // 复位芯片
-    SPI_DELAY(10);
+    SPI_DELAY(1);
     
     uint8_t config[] = {
         0x00, // REG0: AIN0+AIN1差分，增益1
-        0x10, // REG1: 330SPS采样
+        0x14, // REG1: 330SPS,连续采样
         0xE0, // REG2: 50Hz抑制
         0x00  // REG3: 禁用IDAC
     };
-    ADS1220_WriteRegister(0x00,1,&config[0]);
-    ADS1220_WriteRegister(0x01,1,&config[0]);
-    ADS1220_WriteRegister(0x02,1,&config[0]);
-    ADS1220_WriteRegister(0x03,1,&config[0]);
+    ADS1220_WriteRegister(0x00,4,config);//0100 0000
+
     // 启动连续转换
     ADS1220_WriteCommand(ADS1220_START);        // 启动芯片
 }
@@ -78,10 +76,12 @@ void ADS1220_WriteCommand(uint8_t cmd) {
             nn: 要写入的寄存器数量（范围 1~4）
  *@example: ADS1220_WriteRegister(0x00, 0x04, data); 
  */
+
+ uint8_t cmd;
 void ADS1220_WriteRegister(uint8_t reg_addr, uint8_t reg_num,uint8_t *data) {
-    if (reg_num < 1 || reg_num > 4) return;  // 错误处理
+    // if (reg_num < 1 || reg_num > 4) return;  // 错误处理
     SPI_CS_LOW();
-    uint8_t cmd = 0x40 | (((reg_addr << 2) & 0x0c) | ((reg_num - 1) & 0x03));   //reg_num=4 → 4-1=3 → 0x03从最高位开始写
+    cmd = ADS1220_WREG | (((reg_addr << 2) & 0x0c) | ((reg_num - 1) & 0x03));   
     ADS1220_SPI_ReadWriteByte(cmd);  // 写寄存器命令 0100 rrnn
     while(reg_num--) {//往寄存器rr
         ADS1220_SPI_ReadWriteByte(*data++);
@@ -111,15 +111,5 @@ int32_t ADS1220_ReadData(void) {
     return result;
 }
 
-
-
-/* 数据就绪中断处理 */
-// void EXTI0_IRQHandler(void) {
-//     if(__HAL_GPIO_EXTI_GET_IT(SPI_DRDY_PIN) != RESET) {
-//         // 在此读取数据
-//         adc_data = ADS1220_ReadData();
-//         __HAL_GPIO_EXTI_CLEAR_IT(SPI_DRDY_PIN);
-//     }
-// }
 
 

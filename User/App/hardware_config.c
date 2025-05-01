@@ -26,8 +26,6 @@ void HardwareConfig(void)
     HAL_TIM_Base_Start_IT(&htim3);  ///主任务跑在定时器3，频率高，注释掉方便调试
 		HAL_TIM_Base_Start_IT(&htim4);
 
-    //使能电机
-    EmmEN_Init();
 }
 
 

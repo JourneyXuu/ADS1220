@@ -101,7 +101,6 @@ int main(void)
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
   HardwareConfig();
-  HAL_Delay(1000);
   ADS1220_Init();
   
   /* USER CODE END 2 */

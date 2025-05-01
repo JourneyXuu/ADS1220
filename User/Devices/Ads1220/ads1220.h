@@ -15,6 +15,13 @@ extern int adc_data;
 
 
 /* 引脚定义 - 根据实际接线修改 */
+/*
+SCK     PC10
+MOSI    PC12
+MISO    PC11
+CS      PC9
+DRDI    PC8
+*/
 #define SIM_SPI_PORT     GPIOC
 #define SPI_SCK_PIN      ADS_SCK_Pin
 #define SPI_MOSI_PIN     ADS_MOSI_Pin
