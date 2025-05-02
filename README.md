@@ -5,6 +5,9 @@
 **立创开源链接:**
 https://oshwhub.com/xu_duoduo/ads1220-module-24-bit  
 
+**CSDN开源链接：**
+https://blog.csdn.net/xu_duoduo/article/details/147669175?sharetype=blogdetail&sharerId=147669175&sharerefer=PC&sharesource=xu_duoduo&spm=1011.2480.3001.8118
+
 ![image](https://github.com/user-attachments/assets/766d81c6-8e8d-4942-afdc-7c30b89e6542)
  
 ## **0.1 ADS1220 核心功能**
