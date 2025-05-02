@@ -102,7 +102,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HardwareConfig();
   ADS1220_Init();
-//  adc_data = ADS1220_ReadData();
+  HAL_Delay(3);
+  adc_data = ADS1220_ReadData();
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -8,7 +8,7 @@ void ADS1220_Init(void) {
     SPI_SCK_LOW();  // 空闲时钟低电平
 
     ADS1220_WriteCommand(ADS1220_RESET);        // 复位芯片
-    SPI_DELAY(1);
+    SPI_DELAY(3);
     
     uint8_t config[] = {
         0x00, // REG0: AIN0+AIN1差分，增益1
