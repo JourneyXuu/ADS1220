@@ -5,7 +5,7 @@
 **立创开源链接:**
 https://oshwhub.com/xu_duoduo/ads1220-module-24-bit  
 
- <img src="https://image.lceda.cn/oshwhub/pullImage/1979cc339e054ff2b69eb77c9cbc21a9.png" width="400" /> 
+![image](https://github.com/user-attachments/assets/766d81c6-8e8d-4942-afdc-7c30b89e6542)
  
 ## **0.1 ADS1220 核心功能**
 
@@ -26,8 +26,7 @@ https://oshwhub.com/xu_duoduo/ads1220-module-24-bit
 - 电源范围：2.3-5.5V宽压供电
 
 ### 4.IO管脚
-
-  <img src="https://image.lceda.cn/oshwhub/pullImage/811cb326e599449aad8a5bfa8f9850ed.png" width="700" /> 
+![image](https://github.com/user-attachments/assets/4af52ae1-76d5-4224-b140-3ed232fd9103)
 
 ```
 CS:         片选,拉低使能通信
@@ -48,8 +47,7 @@ DRDY:       当ADS1220完成数据转换以后就会产生下降沿跳变,
 
 ### **1.1模块介绍**
 **1.1.1 功能框图**
-
- <img src="https://image.lceda.cn/oshwhub/pullImage/9288a4be71f244e7a7a5f7cc6b31ed5a.png" width="700" /> 
+![image](https://github.com/user-attachments/assets/cebcd36b-8c2c-4304-8cee-fc6babd1ff68)
 该设备包含一个非常灵活的输入多路复用器。
 可以测量四个单端信号、两个差分信号或两个单端信号和一个差分信号的组合。
 **组合1：四个单端信号：**
@@ -63,8 +61,8 @@ AIN0 AIN1 AIN2 AIN3
 该设备包含一个非常灵活的输入多路复用器，如图38所示。
 可以测量四个单端信号、两个差分信号或两个单端讯号和一个差分讯号的组合。
 ```
+![image](https://github.com/user-attachments/assets/1eae8ca8-81c3-40d6-a9bb-1ca157e2744c)
 
- <img src="https://image.lceda.cn/oshwhub/pullImage/77ab3214d0bb4a77a3df0f00f2d3a040.png" width="700" /> 
  
 
 #### **1.1.3 ADS1220.可编程增益放大器(PGA)**
@@ -73,13 +71,15 @@ PGA:programmable gain amplifier (PGA)
 PGA可以被设置为1,2,4,8,16,32,64,128
 为了保证PGA工作在线性工作区，运放输出信号必须满足：
 ```
- <img src="https://image.lceda.cn/oshwhub/pullImage/357829d44a244d1e8536a2e1eea51ab5.png" width="400" /> 
+![image](https://github.com/user-attachments/assets/744970d3-c0e5-45ab-a844-62492c4fc8c4)
+
  
  ```
  由运放的输出信号就可以根据PGA反算出输入信号的范围
  ```
 **量程**
- <img src="https://image.lceda.cn/oshwhub/pullImage/376e2b93c8bb43f4b2dbe7c4a32f0f36.png" width="400" /> 
+![image](https://github.com/user-attachments/assets/85fa1920-3739-4cc9-a549-c7fb9f0cf7bc)
+
 
 
 
@@ -92,7 +92,8 @@ TPS536201将输入5V转化为3.6V
 TPS7A2033PDBVR将输入3.6V转为3.3V，效率为91.67%，降低纹波
 ```
 #### **2.1.1 TPS536201**
- <img src="https://image.lceda.cn/oshwhub/pullImage/166eb9ca0cad45c9b9c158e57411140b.png" width="400" /> 
+![image](https://github.com/user-attachments/assets/cc8aba2e-6216-4f51-a01e-8a9999c7ce32)
+
  
 ```
 宽输入电压: 4.5V--17V
@@ -102,10 +103,12 @@ VB反馈电压0.768V
 ```
 
 **(1) 推荐的电感电容值**
- <img src="https://image.lceda.cn/oshwhub/pullImage/200adbdffb9e4034890fb7cbc2d6c775.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/37296613-0e62-41a9-ba2c-245b485b542c)
+
 
 **（2） 手册上对双极点频率和D-CAP2补偿机制的**
- <img src="https://image.lceda.cn/oshwhub/pullImage/97cb5255760c404bb2aab6ca76e3894e.png" width="700" /> 
+![image](https://github.com/user-attachments/assets/1e0066d3-fa80-498f-a8d9-4102f4dfcad6)
+
  下面为翻译
  ```
  在低频下，整体环路增益由输出设定点电阻分压器网络和设备的内部增益设置。低频相位为180°。
@@ -117,7 +120,8 @@ VB反馈电压0.768V
  为了满足这一要求，请使用表2中推荐的值。
  ```
 **（3） 谈谈开关电源LC滤波器的双极点频率和D-CAP2补偿机制**
- <img src="https://image.lceda.cn/oshwhub/pullImage/71a6efd9d4594c85a2bbaa86bccc0efa.png" width="300" /> 
+![image](https://github.com/user-attachments/assets/b14885af-cd85-4f3c-b714-4e37e4f882b6)
+
 ```
 这部分的内容主要涉及到《自动控制原理》
 ```
@@ -130,7 +134,8 @@ DC-DC的其中一个测试项是环路稳定性（环路增益）。
 测量电阻两端电压的幅值和相位
 改变交流信号的频率，获得环路增益的幅频和相频曲线
 ```
- <img src="https://image.lceda.cn/oshwhub/pullImage/6faf4122489b43bea24a91f1e3834dbc.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/20cc45eb-f6ca-4a24-ad3c-8157c72d2d0c)
+
  
  ```
 环路增益定义为T(s)=G(s)H(s)，是环路中所有环节的乘积
@@ -155,7 +160,8 @@ T(s)的特性（增益、相位）影响负反馈系统的稳定性
 在零点频率（fz）以上，增益滚降减缓至-20 dB/十倍频程
 ```
 #### **2.1.2 TPS7A2033PDBVR**
- <img src="https://image.lceda.cn/oshwhub/pullImage/386c2c08bcce420f8dcede79b19de1d1.png" width="400" /> 
+![image](https://github.com/user-attachments/assets/64946530-abbb-4908-90ac-6ad94777a171)
+
  
 ```
 超低压差：
@@ -169,7 +175,8 @@ PSRR(电源抑制比)：Power Supply RejecTIon RaTIo
  是衡量电路对电源噪声抑制能力的指标，表示输入电源的噪声被输出端衰减的程度。
  其数学定义为：
 ```
- <img src="https://image.lceda.cn/oshwhub/pullImage/7e373b4fb2b846c2acf7ccc2041cbaaa.png" width="400" /> 
+![image](https://github.com/user-attachments/assets/7d7bd9ef-abf6-4f3b-9786-ac49fa5aada2)
+
  
 ```
 
@@ -184,7 +191,8 @@ PSRR(电源抑制比)：Power Supply RejecTIon RaTIo
 https://blog.csdn.net/weixin_45165549/article/details/127892341
 
 #### **3.1 配置寄存器0**
- <img src="https://image.lceda.cn/oshwhub/pullImage/f8cbce8598cf43d499b26c489b9236b1.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/970e9f94-bc60-4ac0-9857-7cc3faa1b7e4)
+
  
  ```
  MUX[3:0]   : 0000 默认双端输入
@@ -194,11 +202,14 @@ https://blog.csdn.net/weixin_45165549/article/details/127892341
  ```
  
  #### **3.2 配置寄存器1**
-  <img src="https://image.lceda.cn/oshwhub/pullImage/18b111360ea746108329521854f62505.png" width="600" /> 
-  <img src="https://image.lceda.cn/oshwhub/pullImage/ec7ccb6d5a904264895a3bf4efa0a0be.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/f3468765-72cc-45e5-b643-7558305bd20f)
+
+![image](https://github.com/user-attachments/assets/a3444e2f-faac-4963-b5cd-82aa82af2e17)
+
   
 **3.2.1 烧毁检测电流源**
-   <img src="https://image.lceda.cn/oshwhub/pullImage/0fe0f1183d8948fdbde73819834767a9.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/c668641f-3db1-476e-8636-bb62381fb3c8)
+
    
 **3.2.2 SPS**
 SPS（Samples Per Second）是每秒采样次数的缩写，表示ADC每秒钟采集的数据点数
@@ -213,7 +224,8 @@ cofig[1] = 1000 0100 = 0x14
 ```
 
  #### **3.3 配置寄存器2**
-   <img src="https://image.lceda.cn/oshwhub/pullImage/6808f71922e34b84bcf46fb78798ff81.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/9ca2e2f7-c2a2-46c8-bc30-ba15f647095b)
+
    
 #### **3.3.1 IDAC**
 
@@ -221,7 +233,8 @@ IDAC（可编程激励电流源） 是ADS1220的双通道匹配恒流源
 10μA~1500μA（7档可编程）
 可编程（从AINP流出或AINN流入）
 #### **3.3.2 PSW**
-   <img src="https://image.lceda.cn/oshwhub/pullImage/e2642edbe713474f8f58522bf2f93c9d.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/4cacc29e-e26f-470b-afd7-9dd8b5985277)
+
 
 ```
 VREF[1:0]  :  11 使用基准模拟电压AVDD（3.3V）
@@ -232,7 +245,8 @@ cofig[2] = 1110 0000 = 0xE0
 ```
 
  #### **3.4 配置寄存器3**
-   <img src="https://image.lceda.cn/oshwhub/pullImage/ee6fa57236f0400191a90b66db767ffa.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/4667dcc1-e1a9-4334-93a4-6c2e42f15f3c)
+
    
 ```
 I1MUX[2:0]   :  000 失能恒流源1
@@ -243,7 +257,8 @@ cofig[3] = 0000 0000 = 0x00
 ```   
 ### **3.5.1 时序代码**
  
-   <img src="https://image.lceda.cn/oshwhub/pullImage/aa858b86ba7648c1a00eaa897aefbeb1.png" width="600" />  
+![image](https://github.com/user-attachments/assets/bcb8b254-5aa0-4fef-b47f-9ccfc6e2e906)
+
  
 **由于发送命令完可能还要接收CS，所以不在最基础的时序中做CS翻转处理，而是在外面**
 ```
@@ -278,10 +293,12 @@ uint8_t ADS1220_SPI_ReadWriteByte(uint8_t tx_data) {
  #### **3.5.2 通讯代码**
  
  
-   <img src="https://image.lceda.cn/oshwhub/pullImage/5598aca5775349b28045b02c7dff937a.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/b88162e9-15d2-43b9-b65c-a2627a8ce8e1)
+
    
 #### **3.5.3 重点解释三条指令**
-   <img src="https://image.lceda.cn/oshwhub/pullImage/3c3528b577e04ddcbacaa8f525eea695.png" width="600" /> 
+![image](https://github.com/user-attachments/assets/a94e9bdb-178f-499d-9ab0-2f2e85ba375a)
+
    
 #### **RDATA（读取数据指令）**:0001 xxxx
 1. 将 **最新的ADC转换结果** 加载到输出移位寄存器中。
@@ -369,11 +386,14 @@ void ADS1220_WriteRegister(uint8_t reg_addr, uint8_t reg_num,uint8_t *data) {
 }
 ```
 
-<img src="https://image.lceda.cn/oshwhub/pullImage/68e2e792a69e45a1982e6a9ebdb94ac0.png" width="700" /> 
+![image](https://github.com/user-attachments/assets/fd113bc8-9c3c-4d1a-be79-9f3e0926e25a)
+
 解释:
-<img src="https://image.lceda.cn/oshwhub/pullImage/58b9b24ce4744e74abfaec631260c674.png" width="700" /> 
+![image](https://github.com/user-attachments/assets/655872c7-820d-4c20-80d1-fe6b98d70c80)
+
 上图为初始化函数发送的数据,以下为初始化函数
-<img src="https://image.lceda.cn/oshwhub/pullImage/3fc1202df4b0413d813e0e42b1819060.png" width="700" /> 
+![image](https://github.com/user-attachments/assets/aa14ad83-c00b-4fcd-b437-50e5f73b5f45)
+
 
 ```
 void ADS1220_Init(void) {
@@ -398,45 +418,63 @@ void ADS1220_Init(void) {
 **github开源链接：**
    https://github.com/JourneyXuu/ADS1220
 调试通讯成功，由于缺少射频座子就不焊了，提供完整调试代码
- <img src="https://image.lceda.cn/oshwhub/pullImage/46fe3f33cd3a4a9983de6af747293de7.png" width="700" /> 
+![image](https://github.com/user-attachments/assets/07ec06cc-4ae7-49ae-8d0d-11328f5f4629)
+
 
 
 ## **注意事项**
 TL431有两种形式
 #### **1. TI的TL431**
+
 **1.1 TL431封装**
- <img src="https://image.lceda.cn/oshwhub/pullImage/c1cc5dead7b948b0a8c6269fd77f4534.png" width="400" /> 
+
+![image](https://github.com/user-attachments/assets/9e387060-6784-44c3-8c79-d20e27cacb6a)
+
+
 **1.2 国内原产的TL431基本都是TI的TL432封装**
-  <img src="https://image.lceda.cn/oshwhub/pullImage/6a8d4d3ffdf244e3b4be3711b48d8a62.png" width="400" /> 
+
+![image](https://github.com/user-attachments/assets/9a05a5d4-b9eb-4529-a187-3494b0fe99f6)
+
   
  ```
  CATHODE:阴极
  REF:参考极（2.5V）
  ANODE:阳极
  ```
-   <img src="https://image.lceda.cn/oshwhub/pullImage/29f2e1850b00443a872b05700c2581f8.png" /> 
+![image](https://github.com/user-attachments/assets/2c98e8ca-1c6e-4e1a-9312-6435b90fca34)
+
    注意：下面是我绘制的第一版，第一版有错误，导致短路，电流大，第二版是对的
            
 **1.2.1 第一版**
-  <img src="https://image.lceda.cn/oshwhub/pullImage/1c05296d8090419ebaf5adcbd3c8cf92.png" width="400" />    
+![image](https://github.com/user-attachments/assets/d282372f-d623-4991-8a4c-e9d5713fadb0)
+
 **1.2.2 第二版**
-  <img src="https://image.lceda.cn/oshwhub/pullImage/f2d89b9b73994e1c85a94745abfd3fec.png" width="400" />   
+![image](https://github.com/user-attachments/assets/a8be0e96-a066-4a75-8945-502cca513bdd)
+
 
 
 ## **实物图**
 此处可放入组装完成后完整实物图
 图1：正面图
- <img src="https://image.lceda.cn/oshwhub/pullImage/1979cc339e054ff2b69eb77c9cbc21a9.png" width="400" /> 
+
+![image](https://github.com/user-attachments/assets/5aeaa8af-be2b-4094-97c0-c7484c423dd4)
+
  
 图2：正反面图
- <img src="https://image.lceda.cn/oshwhub/pullImage/135103f0e7c94c0693afcc6ae45aaacb.png" width="400" /> 
+
+![image](https://github.com/user-attachments/assets/b11b5453-7a36-43a8-b081-84966ca82c9c)
+
 
 ## **电源测试**
 不知道为啥，可能是示波器的探头有点老，导致噪声非常大
 图1：开关电源TPS536201输出纹波
- <img src="https://image.lceda.cn/oshwhub/pullImage/c4cde521f6484b489d78bce4241fd5ee.jpg" width="400" /> 
+
+![image](https://github.com/user-attachments/assets/6e4a5981-ced3-4f38-9f06-9f62f9dfdb92)
+
 图2：LDO输出纹波，经过π型滤波后
- <img src="https://image.lceda.cn/oshwhub/pullImage/d258d1d1dcf142d2b7304ac9f0a7b457.jpg" width="400" /> 
+
+![image](https://github.com/user-attachments/assets/484f77ec-1f13-4d4f-9450-98ef4f4991cc)
+
 
  
  
