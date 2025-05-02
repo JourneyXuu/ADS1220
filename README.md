@@ -3,7 +3,8 @@
    https://github.com/JourneyXuu/ADS1220  
    
 **立创开源链接:**
-https://oshwhub.com/xu_duoduo/ads1220-module-24-bit
+https://oshwhub.com/xu_duoduo/ads1220-module-24-bit  
+
  <img src="https://image.lceda.cn/oshwhub/pullImage/1979cc339e054ff2b69eb77c9cbc21a9.png" width="400" /> 
  
 ## **0.1 ADS1220 核心功能**
