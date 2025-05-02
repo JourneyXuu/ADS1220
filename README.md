@@ -1,6 +1,7 @@
 ## **0.0 项目简介**
 **github开源链接：**
    https://github.com/JourneyXuu/ADS1220
+   
  <img src="https://image.lceda.cn/oshwhub/pullImage/1979cc339e054ff2b69eb77c9cbc21a9.png" width="400" /> 
  
 ## **0.1 ADS1220 核心功能**
@@ -22,6 +23,7 @@
 - 电源范围：2.3-5.5V宽压供电
 
 ### 4.IO管脚
+
   <img src="https://image.lceda.cn/oshwhub/pullImage/811cb326e599449aad8a5bfa8f9850ed.png" width="700" /> 
 
 ```
@@ -43,6 +45,7 @@ DRDY:       当ADS1220完成数据转换以后就会产生下降沿跳变,
 
 ### **1.1模块介绍**
 **1.1.1 功能框图**
+
  <img src="https://image.lceda.cn/oshwhub/pullImage/9288a4be71f244e7a7a5f7cc6b31ed5a.png" width="700" /> 
 该设备包含一个非常灵活的输入多路复用器。
 可以测量四个单端信号、两个差分信号或两个单端信号和一个差分信号的组合。
