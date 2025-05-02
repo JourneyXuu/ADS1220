@@ -98,7 +98,7 @@ int32_t ADS1220_ReadData(void) {
     int32_t result = 0;
     
     SPI_CS_LOW();
-    ADS1220_SPI_ReadWriteByte(0x10); // RDATA命令
+    ADS1220_SPI_ReadWriteByte(ADS1220_RDATA); // RDATA命令
     rx_buf[0] = ADS1220_SPI_ReadWriteByte(0xFF);
     rx_buf[1] = ADS1220_SPI_ReadWriteByte(0xFF);
     rx_buf[2] = ADS1220_SPI_ReadWriteByte(0xFF);

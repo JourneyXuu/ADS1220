@@ -58,7 +58,7 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int16_t count = 0;
 /* USER CODE END 0 */
 
 /**
@@ -102,13 +102,16 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HardwareConfig();
   ADS1220_Init();
-  
+//  adc_data = ADS1220_ReadData();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+//      adc_data = ADS1220_ReadData();
+//      HAL_Delay(500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

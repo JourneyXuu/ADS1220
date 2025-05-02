@@ -244,7 +244,7 @@ void EXTI9_5_IRQHandler(void)
   if(__HAL_GPIO_EXTI_GET_IT(ADS_DRDY_Pin) != RESET) {
     if(HAL_GPIO_ReadPin(ADS_DRDY_GPIO_Port, ADS_DRDY_Pin) == GPIO_PIN_RESET) {
     // 在此读取数据
-      adc_data = ADS1220_ReadData();
+      // adc_data = ADS1220_ReadData();
       }
     }
   /* USER CODE END EXTI9_5_IRQn 0 */
